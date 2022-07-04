@@ -1,0 +1,10 @@
+body{
+    background-color: red;
+    font-family: Inter;
+}
+
+h1{
+    margin: auto;
+    background-color: blue;
+    color: whitesmoke;
+}
