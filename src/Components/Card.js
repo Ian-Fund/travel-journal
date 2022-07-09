@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../data";
+import '../CSS/Card.css'
 
 export default function Card(props) {
   const locations = data.map((x) => {

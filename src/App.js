@@ -7,11 +7,11 @@ console.log("Data are ",data);
 const entries = data.map(x => {
   return(
     <Card 
-        img={data.imageUrl}
-        location={data.location}
-        startDate={data.startDate}
-        endDate={data.endDate}
-        description={data.description}
+        img={x.imageUrl}
+        location={x.location}
+        startDate={x.startDate}
+        endDate={x.endDate}
+        description={x.description}
 
     />
   )

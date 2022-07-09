@@ -1,0 +1,16 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 5%;
+}
+
+img{
+    max-width: 40%;
+}
+
+.journal--entry{
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    background-color: gray;
+}
