@@ -1,30 +1,24 @@
 import React from "react";
 import data from "../data";
-import '../CSS/Card.css'
+import "../CSS/Card.css";
 
 export default function Card(props) {
   const locations = data.map((x) => {
     return <div>{x.location}</div>;
   });
-  console.log("props are: ",props);
   return (
-      <div className="card">
-          <img src={props.img} />
-          <div className="journal--entry">
-            {props.title}
-            {props.location}
-            {props.startDate}
-            {props.endDate}
-            {props.description}
-
-
-
-          </div>
-
+    <div className="card">
+      <img src={props.img} />
+      <div className="journal--entry">
+        <h1 className="title">{props.title}</h1>
+        {props.location}
+        {props.startDate}
+        {props.endDate}
+        {props.description}
+      </div>
     </div>
-    );
+  );
 }
-
 
 // {
 //   title: "Mount Fuji",

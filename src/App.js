@@ -3,19 +3,19 @@ import "./App.css";
 import data from "./data.js";
 import Header from "./Components/Header";
 import Card from "./Components/Card";
-console.log("Data are ",data);
-const entries = data.map(x => {
-  return(
-    <Card 
-        img={x.imageUrl}
-        location={x.location}
-        startDate={x.startDate}
-        endDate={x.endDate}
-        description={x.description}
-
+console.log("Data are ", data);
+const entries = data.map((x) => {
+  return (
+    <Card
+      title={x.title}
+      img={x.imageUrl}
+      location={x.location}
+      startDate={x.startDate}
+      endDate={x.endDate}
+      description={x.description}
     />
-  )
-})
+  );
+});
 function App() {
   return (
     <div className="App">
@@ -26,8 +26,6 @@ function App() {
 }
 
 export default App;
-
-
 
 // {
 //   title: "Mount Fuji",

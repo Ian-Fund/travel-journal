@@ -1,16 +1,22 @@
-.card{
-    display: flex;
-    flex-direction: row;
-    padding: 5% 5%;
+.card {
+  display: flex;
+  flex-direction: row;
+  padding: 5% 5%;
 }
 
-img{
-    max-width: 40%;
+img {
+  max-width: 40%;
 }
 
-.journal--entry{
-    display: flex;
-    justify-content:right;
-    align-items: center;
-    background-color: gray;
+.journal--entry {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: left; */
+  align-content: left;
+  background-color: gray;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
 }
