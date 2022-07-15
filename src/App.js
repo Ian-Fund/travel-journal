@@ -13,6 +13,7 @@ const entries = data.map((x) => {
       startDate={x.startDate}
       endDate={x.endDate}
       description={x.description}
+      link={x.googleMapsUrl}
     />
   );
 });

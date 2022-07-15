@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../data";
 import "../CSS/Card.css";
+import pin from "../../src/pin.png";
 
 export default function Card(props) {
   const locations = data.map((x) => {
@@ -8,13 +9,18 @@ export default function Card(props) {
   });
   return (
     <div className="card">
-      <img src={props.img} />
+      <img className="location--photo" src={props.img} />
       <div className="journal--entry">
+        <span className="location--info">
+          <img src={pin} />
+          {props.location}
+          <a href={props.link}>Link on Google Maps</a>
+        </span>
         <h1 className="title">{props.title}</h1>
-        {props.location}
-        {props.startDate}
-        {props.endDate}
-        {props.description}
+        <h4 className="travel--date">
+          {props.startDate} - {props.endDate}
+        </h4>
+        <p className="description">{props.description}</p>
       </div>
     </div>
   );
