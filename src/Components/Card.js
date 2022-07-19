@@ -2,11 +2,13 @@ import React from "react";
 import data from "../data";
 import "../CSS/Card.css";
 import pin from "../../src/pin.png";
+import bois from "../../src/The_Bois.png";
 
 export default function Card(props) {
   const locations = data.map((x) => {
     return <div>{x.location}</div>;
   });
+  console.log("PROPS:", props);
   return (
     <div className="card">
       <img className="location--photo" src={props.img} />
